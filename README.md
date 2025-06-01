@@ -4,6 +4,7 @@
 Toolset for evaluating how closely a sideloaded LLM with a *mindfile* replicates the personality and answers of a reference human.
 
 Designed to support both **manual input** (e.g., via ChatGPT interface) and **automated testing pipelines**, with two core comparison modes: **LLM-based similarity scoring** and **Arena-style Elo ranking**.
+Please, read the abstract.md file.
 
 ---
 
@@ -168,7 +169,22 @@ Both comparison scripts accept:
 | LLM Similarity | ✅            | ❌              | ✅            |
 | Arena Elo      | ❌            | ✅              | ✅            |
 
+| Method         | Output                   | Manual | Objective |
+| -------------- | ------------------------ | ------ | --------- |
+| LLM similarity | `comparison_scores.json` | ❌      | ✅         |
+| Arena GUI      | `elo_scores.json`        | ✅      | ✅         |
+
+
 Both modes are complementary.
+
+## ✅ Summary of Supported Workflows
+| Task                              | Manual | Automated |
+| --------------------------------- | ------ | --------- |
+| Human answer collection           | ✅      | ❌         |
+| Sideloaded LLM answer collection  | ✅      | ✅         |
+| Answer comparison via LLM         | ❌      | ✅         |
+| Answer comparison via Arena (GUI) | ✅      | ✅         |
+| Markdown report generation        | ✅      | ✅         |
 
 ---
 
