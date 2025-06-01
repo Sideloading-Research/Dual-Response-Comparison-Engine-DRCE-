@@ -43,8 +43,8 @@ drce/
 ## ⚙️ Installation
 
 ```bash
-git clone https://github.com/yourname/drce.git
-cd drce
+git clone https://github.com/Sideloading-Research/Dual-Response-Comparison-Engine-DRCE-.git
+cd Dual-Response-Comparison-Engine-DRCE-
 pip install -r requirements.txt
 ````
 
